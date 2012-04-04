@@ -1,8 +1,10 @@
 import io
 
-parsed_normals=open('parse_normal','w')
+# INPUT : non - sparse data in nonsparse.txt
+# OUTPUT: sparse format in sparse.txt
+parsed_normals=open('sparse.txt','w')
 
-for line in file('normals'):
+for line in file('nonsparse.txt'):
 	tokens=line.split()
 	target=float(tokens[0])
 	#target=float(tokens[1])
